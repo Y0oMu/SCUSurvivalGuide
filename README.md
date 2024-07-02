@@ -1,7 +1,7 @@
 # 四川大学生存指南
 ## 你好
 
-这里是四川大学生存指南 <https://y0omu.github.com/SCUSurvivalGuide>
+这里是四川大学生存指南 <https://y0omu.github.io/SCUSurvivalGuide>
 
 - 通过主题和目录浏览文章。
     - 电脑端：在上方标签栏选择主题，在左侧目录选择文章。
