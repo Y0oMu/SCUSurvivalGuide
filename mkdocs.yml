@@ -1,0 +1,178 @@
+# [Info]
+# 左上角标题
+site_name: 四川大学生存指南
+site_url: https://y0omu.github.io/SCUSurvivalGuide
+site_author: y0omu
+site_description: 四川大学生存指南
+
+# [Navigtion]
+nav:
+  - 绪论:
+    - START/index.md
+  - 生存篇:
+    - SURVIVALGUIDE/index.md
+    - SURVIVALGUIDE/welcome.md
+  - 学院篇:
+    - COLLEGE/index.md
+    - 计算机学院:
+      - COLLEGE/计算机学院/index.md
+    - 软件学院:
+      - COLLEGE/软件学院/index.md
+    - 网络空间安全学院:
+      - COLLEGE/网络空间安全学院/index.md
+      - COLLEGE/网络空间安全学院/run.md
+  - 去向篇:
+    - WHERE/index.md
+  - 访谈篇:
+    - INTERVIEWS/index.md
+  - 二三事:
+    - 23/index.md
+# [UI]
+# [top]
+theme:
+  name: material
+  # [切换日间模式和夜间模式]
+  # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#color-palette-toggle
+  palette:
+    # 日间模式
+    - scheme: default
+      # 主颜色
+      # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#primary-color
+      primary: indigo
+      # 链接等可交互元件的高亮色
+      # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#accent-color
+      accent: orange
+      toggle:
+        # 图标
+        icon: material/weather-night
+        # 鼠标悬浮提示
+        name: 切换至夜间模式
+    # 夜间模式
+    - scheme: slate
+      primary: indigo
+      accent: orange
+      toggle:
+        icon: material/weather-sunny
+        name: 切换至日间模式
+  features:
+    # 使用 Tab 来进行分类
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-tabs
+    - navigation.tabs
+    # 返回顶部的按钮，在上滑时出现
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#back-to-top-button
+    - navigation.top
+    # 给每个 Tab 添加一个 index.md，且在点击 Tab 时打开
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#section-index-pages-with-section-index-pages
+    - navigation.indexes
+    # 打开 Tab 时左侧目录全部展开
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-expansion
+    - navigation.expand
+    # 搜索输入一些字母时推荐补全整个单词
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search/#search-suggestions
+    - search.suggest
+    # 搜索的关键词文章加入高亮
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search/#search-highlighting
+    - search.highlight
+    # 可以通过按钮复制代码
+    # https://squidfunk.github.io/mkdocs-material/reference/code-blocks/#code-copy-button
+    - content.code.copy
+    # [点击按钮跳转至 GitHub 修改 Markdown 源文件]
+    # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/#code-actions
+    - content.action.edit
+  language: zh # 一些提示性的文字会变成中文
+  icon:
+    # [添加 GitHub 仓库]
+    # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/#repository-icon
+    repo: fontawesome/brands/github
+# [点击按钮跳转至 GitHub 修改 Markdown 源文件]
+# https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/#code-actions
+edit_uri: edit/main/docs/
+# [top-right corner]
+# [添加 GitHub 仓库]
+# https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/
+repo_url: https://github.com/Y0oMu/SCUSurvivalGuide
+repo_name: SCUSurvivalGuide
+# [bottom-left corner]
+# [版权说明]
+# https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer/#copyright-notice
+copyright: 
+# [bottom-right corner]
+extra:
+  # [添加社交网络图标和链接]
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer/#social-links
+  # 搜索图标：https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/#search
+  # name 会在鼠标悬浮时提示
+  social: # icons
+    - name: GitHub | Y0oMu
+      icon: fontawesome/brands/github
+      link: https://github.com/Y0oMu
+    - name: Bilibili | -幽穆-
+      icon: fontawesome/brands/bilibili
+      link: https://space.bilibili.com/215373623
+
+# [Extensions]
+plugins:
+  # [搜索功能]
+  # https://squidfunk.github.io/mkdocs-material/plugins/search/
+  # 之前中文搜索是 Insider 的功能（https://squidfunk.github.io/mkdocs-material/blog/2022/chinese-search-support/），现在好像已经是默认功能了，
+  - search:
+      lang:
+        - zh
+        - en
+        - ja
+  # [给单篇文章添加标签]
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/
+  # https://squidfunk.github.io/mkdocs-material/plugins/tags/#meta.tags
+  - tags
+markdown_extensions:
+  # [数学公式支持]
+  # https://squidfunk.github.io/mkdocs-material/reference/math/#katex
+  - pymdownx.arithmatex:
+      generic: true
+  # [图片功能支持]
+  # https://squidfunk.github.io/mkdocs-material/reference/images/
+  # 给 Markdown 图片语法后面添加 `{width="300"}` 设置大小
+  - attr_list
+  - md_in_html
+  # [给标题添加链接]
+  # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/#+toc.permalink
+  - toc:
+      permalink: true # 固定标题位置为当前位置
+  # [代码语法高亮]
+  # https://squidfunk.github.io/mkdocs-material/reference/code-blocks/#code-blocks
+  # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/#highlight
+  - pymdownx.highlight:
+      # 显示行号
+      linenums: true
+      # 显示编程语言名称
+      auto_title: true
+      # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/#+pymdownx.highlight.line_spans
+      line_spans: __span
+      # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/#+pymdownx.highlight.pygments_lang_class
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  # [Markdown 提示]
+  # https://squidfunk.github.io/mkdocs-material/reference/admonitions/
+  - admonition
+  - pymdownx.details
+  # [Markdown footnote 语法支持]
+  # https://squidfunk.github.io/mkdocs-material/reference/footnotes/
+  - footnotes
+
+extra_javascript:
+  # [数学公式支持]
+  # https://squidfunk.github.io/mkdocs-material/reference/math/#katex
+  - mkdocs/javascripts/katex.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
+extra_css:
+  # [数学公式支持]
+  # https://squidfunk.github.io/mkdocs-material/reference/math/#katex
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+  # [自定义 css]
+  # 不使用底部的翻页
+  - mkdocs/css/no-footer.css
+  # 无序列表符号自定义
+  - mkdocs/css/unordered-list-symbols.css

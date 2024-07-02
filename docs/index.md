@@ -28,8 +28,3 @@ nav:
 ```
 然后提交`Pull Request`
 
-### 创作阶段
-目前还在创作阶段，希望大家踊跃参与
-目标是争取在九月份新生入学前初步构建好整个的项目。
-
-不知道写什么的可以参考友校[上海交通大学生存手册](https://survivesjtu.gitbook.io/survivesjtumanual)
