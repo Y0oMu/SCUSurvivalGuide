@@ -27,8 +27,8 @@ nav:
     - WHERE/index.md
   - 访谈篇:
     - INTERVIEWS/index.md
-  - 二三事:
-    - 23/index.md
+  - 杂项:
+    - misc/index.md
 # [UI]
 # [top]
 theme:
