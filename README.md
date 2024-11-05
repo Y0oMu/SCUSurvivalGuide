@@ -1,4 +1,4 @@
-# 四川大学生存指南
+# 暂停更新
 ## 你好
 
 这里是四川大学生存指南 <https://y0omu.github.io/SCUSurvivalGuide>
